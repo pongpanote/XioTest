@@ -8,6 +8,7 @@
 // @include        http*://*virtonomic*.*/*/*
 // @exclude        http*://virtonomics.wikia.com*
 // ==/UserScript==
+//Test Script
 
 var version = "12.0.127";
 
@@ -36,6 +37,7 @@ numberfy = function (variable){
         return parseFloat(String(variable).replace(/[\s\$\%]/g, "")) || 0;
     }
 };
+
 function zipAndMin(napArr1, napArr2){
     if (napArr1.length > napArr2.length){
         return napArr1;
@@ -1184,6 +1186,7 @@ function solarEnergyPrice(type, subid, choice){
     }
 
 }
+
 function incineratorPrice(type, subid, choice){
 
     var url = "/"+realm+"/main/unit/view/"+subid;
@@ -1229,6 +1232,7 @@ function incineratorPrice(type, subid, choice){
     }
 
 }
+
 function serviceWithoutStockPrice(type, subid, choice){
 
     var url = "/"+realm+"/main/unit/view/"+subid;
@@ -1312,7 +1316,6 @@ function serviceWithoutStockPrice(type, subid, choice){
     }
 
 }
-
 
 function mobileNetworkOperatorPrice(type, subid, choice){
 
@@ -1720,6 +1723,7 @@ function energyPolicy(type, subid, choice){
 
 
 }
+
 function salePolicy(type, subid, choice){
     var url = "/"+realm+"/main/unit/view/"+subid+"/sale";
 
@@ -2782,6 +2786,7 @@ function buyEquipment(type, subid, resultEquipNum, choice){
     }
 
 }
+
 function equipment(type, subid, choice){
 
     var url = "/"+realm+"/window/unit/equipment/"+subid;
@@ -3322,6 +3327,7 @@ function technology(type, subid, choice){
 
 
 }
+
 function politicAgitation(type, subid, choice){
 
     var url = "/"+realm+"/main/unit/view/"+subid;
@@ -3365,6 +3371,7 @@ function politicAgitation(type, subid, choice){
     }
 
 }
+
 function prodBooster(type, subid, choice){
 
     var url = "/"+realm+"/main/unit/view/"+subid;
@@ -4324,6 +4331,7 @@ function unitSizeExtend(type, subid, choice){
         xTypeDone(type);
     }
 }
+
 function wareSize(type, subid, choice){
 
     var url = "/"+realm+"/main/unit/view/"+subid;
@@ -4390,6 +4398,7 @@ function wareSize(type, subid, choice){
 
     }
 }
+
 function wareSupplyShowAdditionSettings(){
     var subid = numberfy(document.URL.match(/(view\/?)\d+/)[0].split("/")[1]);
 
@@ -4468,6 +4477,7 @@ function wareSupplyShowAdditionSettings(){
             .append(maxQualityLabel).append('<br>').append(maxQualityEditor);
     });
 }
+
 var blankFunction = function(){
     return undefined;
 };
