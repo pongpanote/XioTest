@@ -9,6 +9,7 @@
 // @exclude        http*://virtonomics.wikia.com*
 // ==/UserScript==
 //Test Script
+debugger;
 
 var version = "12.0.127";
 
